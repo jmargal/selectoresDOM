@@ -1,5 +1,4 @@
 //Ejercicio 1.1
-let body = document.querySelector("body");
 let numEnlaces = "Hay " + document.querySelectorAll("a").length + " enlaces";
 document.write(numEnlaces + "<br/>");
 

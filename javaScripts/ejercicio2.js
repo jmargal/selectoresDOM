@@ -1,3 +1,12 @@
 //Ejercicio2
-addEventListener('click',function(){document.getElementById('adicional').classList.toggle('visible')});
-addEventListener('click',function(){document.getElementById('enlace').classList.toggle('oculto')});
+let text = document.getElementById("adicional");
+let link = document.getElementById("enlace");
+
+function showText(event) {
+  event.target.classList.toggle("visible");
+}
+function hideLink(event) {
+  event.target.classList.toggle("oculto");
+}
+addEventListener("click", showText);
+addEventListener("click", hideLink);
