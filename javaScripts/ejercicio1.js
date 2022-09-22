@@ -1,12 +1,18 @@
-//Ejercicio 1
-let body=document.querySelector('body');
-let numEnlaces="Hay " +document.querySelectorAll('a').length+" enlaces";
-let parrafo=document.createElement('p');
-let texto=document.createTextNode(numEnlaces);
-parrafo.appendChild(texto);
-body.appendChild(parrafo);
+//Ejercicio 1.1
+let body = document.querySelector("body");
+let numEnlaces = "Hay " + document.querySelectorAll("a").length + " enlaces";
+document.write(numEnlaces + "<br/>");
 
-//Ejercicio 2
-console.log(document.querySelectorAll('a:nth-last-of-type(2)'));
+//Ejercicio 1.2
+let enlaces = document.querySelectorAll("a");
+let solucion = enlaces[enlaces.length - 2].href;
+document.write(solucion + "<br/>");
 
-//Ejercicio 3
+//Ejercicio 1.3
+let enlazaHref = document.querySelectorAll('a[href*="http://prueba"]');
+document.write("Hay " + enlazaHref.length + " que empiezan por http://prueba"+"<br/>");
+
+//Ejercicio 1.4
+let enlacesTercer= document.querySelectorAll('p:nth-child(3) a');
+document.write("El tercer párrafo contiene "+enlacesTercer.length+" enlaces");
+
